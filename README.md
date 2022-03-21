@@ -1,2 +1,2 @@
 # SimpleLinEnumPlant
-Plantplants' personal linux enumeration tool
+Plantplants' personal linux enumeration tool.
