@@ -6,3 +6,6 @@ The script does not let users know how to use the output since the users are exp
 The script is transferred to a target by any means and run. The output is saved to plant.txt.
 
 
+
+###### Comment
+###### The script is actively being developed daily.
