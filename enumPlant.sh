@@ -34,7 +34,7 @@ ls -la /etc/passwd
 printRed "Users with Home Directories"
 grep -v "nologin\|false" /etc/passwd
 
-printRed "Cronjobs /etc/crontab"
+printRed "Reading /etc/crontab"
 cat /etc/crontab
 
 printRed "Listening Ports"
@@ -50,10 +50,12 @@ printRed "No Root Squash"
 cat /etc/exports | grep no_root_squash
 
 printRed "World Writable folders"
-find / -perm -o+w -type d -exec ls -la {} + 2>/dev/null
+#find / -perm -o+w -type d -exec ls -la {} + 2>/dev/null
+#More test needed
 
 printRed "World Writable Files"
-find / -perm -o+w -type f -exec ls -la {} + 2>/dev/null
+#find / -perm -o+w -type f -exec ls -la {} + 2>/dev/null
+#More test needed
 
 } > $output
 
